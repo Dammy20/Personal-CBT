@@ -15,11 +15,13 @@
             /* width: 300px; */
             width: 50%;
         }
-        .om{
-            width: 50%;
-        }
-        #dob{
-            width: 25%;
+        
+       
+        .main-contain{
+            width: 80%;
+            height: 90vh;
+            background-color: white;
+            box-shadow: 0px 0px 20px #eee;
         }
         @media (max-width: 575px) {
             .em{
@@ -37,32 +39,58 @@
     </style>
 </head>
 <body class="">
-    <div class="container-md  mx-auto p-2 ">
-        <div class="w-25 mx-auto d-flex justify-content-center">
-        <img class="om  mx-auto " src="./persylog-removebg-preview (5).png" alt="">
+    <div class="main-contain mx-auto p-2 mt-4 row ">
+       <div class="w-50" >
+     <img class="w-100 " src="./nnn.png" alt="">
+       </div>
+        <div class="col-md-6">
+          
+        <h3 style="color: #A65DEC;" class="text-center   ">Create Account</h3>
+         <div data-mdb-input-init class="form-outline ">
+            
+    <input type="email" id="email" class="form-control my-3" placeholder="Email" />
+   
+  </div>
 
-        </div>
-        <h1 class="text-center  ">Journey with us in the world of Education</h1>
-        <div class="d-sm-flex gap-3 p-3 ">
-            <input type="text" id="surname" class="form-control my-3" placeholder="Surname">
-            <input type="text" id="firstname" class="form-control my-3" placeholder="First name">
-            <input type="text" id="middlename" class="form-control my-3" placeholder="Middle name">
+  
+       
+       <div data-mdb-input-init class="form-outline ">
+      
+         <input type="text" id="surname" class="form-control my-3" placeholder="Surname">
+       </div>
+       <div data-mdb-input-init class="form-outline ">
+       
+        <input type="text" id="firstname" class="form-control my-3" placeholder="First name">
+       </div>
+           
+            <div data-mdb-input-init class="form-outline ">
+                 
+                 <input type="text" id="middlename" class="form-control my-3" placeholder="Middle name">
+            </div> 
+             <div data-mdb-input-init class="form-outline ">
+                 
+                 <input type="password" id="password" class="form-control my-3" placeholder="Password">
+            </div> 
+             <div data-mdb-input-init class="form-outline ">
+                 
+                 <input type="password" id="conpassword" class="form-control my-3" placeholder="Confirm password">
+            </div>
+            <div data-mdb-input-init class="form-outline ">
+                 
+                 <input id="dob" class="form-control my-3 " type="date">
+            </div> 
+           
 
-        </div>
-       <div class="p-3 d-flex gap-3 align-items-center">
-            <h4>Gender:</h4>
+       <div class="d-flex gap-3 align-items-center">
+            <h6 class="mt-2">Gender:</h6>
             <div>Male: <input type="radio" name="Gen" id="male"> </div>
             <div>Female: <input type="radio" name="Gen" id="female"> </div>
        </div>
-        <div  class="p-3 d-flex gap-3 align-items-center">
-            <h4 >Date of Birth:</h4> <input id="dob" class="form-control " type="date">
-        </div>
-       <input type="email" id="email" class="form-control em m-3" placeholder="Email address">
-       <input type="password" id="password" class="form-control em m-3" placeholder="Password">
-       <input type="password" id="conpassword" class="form-control em m-3" placeholder="Confirm password">
-       <div class="d-flex justify-content-end w-100 p-3">
-        <button id="submit" class=" btn btn-primary">Submit</button>
+        
+       <div class="d-flex justify-content-center  w-100 p-3">
+        <button id="submit" style="background-color: #A65DEC;" class=" btn btn-success w-100 px-5">Submit</button>
        </div>
+        </div>
     </div>
 </body>
 </html>
